@@ -19,3 +19,19 @@ dependencies {
 	   implementation 'com.github.Mahmudxon:msgpack-android:VERSION'
         }
 ```
+
+## USEGE
+You can use with retrofit and Gson :
+```
+Retrofit.Builder()
+            .addConverterFactory(MsgPackConvertorFactory())
+	    ...
+	    .build()
+```
+or 
+```
+  val msgpack = Msgpack()
+  val textJson = ANY_JSON
+  val msgData = msgpack.convertFromJson(textJson) // MessagePack Data
+  val jsonData = msgpack.convertToJson(msgData)
+```
