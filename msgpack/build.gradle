@@ -24,9 +24,15 @@ android {
     }
 
    buildFeatures {
-        prefab true
+        prefabPublishing true
     }
-
+    
+prefab {
+    msgpack
+     {
+      headers "src/main/cpp/msgpack/include"
+    }
+}
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
