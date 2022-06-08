@@ -26,13 +26,7 @@ android {
    buildFeatures {
         prefabPublishing true
     }
-    
-prefab {
-    msgpack
-     {
-      headers "src/main/cpp/msgpack/include"
-    }
-}
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -46,6 +40,9 @@ prefab {
             path file('src/main/cpp/CMakeLists.txt')
             version '3.10.2'
         }
+    }
+    packagingOptions {
+        pickFirst "**/lib/**"
     }
 }
 
