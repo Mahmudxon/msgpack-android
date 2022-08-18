@@ -2,6 +2,8 @@
 
 Json MessagePack convertor library for android.
 
+### (!)Please, <a href="https://raw.githubusercontent.com/Mahmudxon/msgpack-android/master/msgpack-release.aar">download</a> download library ass .arr file. It has small error with building by jitpack. Sorry, for this! I need a free time to fix it.
+
 ## How to
 To get a Git project into your build: <br />
 **Step 1.** Add the JitPack repository to your build file 
